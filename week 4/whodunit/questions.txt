@@ -1,0 +1,28 @@
+1.  What is <stdint.h> ?
+<stdint.h> is a library that allows the programmer to explicitly state the size of the integers that are being used.
+2.  What’s the point of using uint8_t, uint32_t, int32_t, and uint16_t in a program?
+It states the memory size differences in the different kind of variables used in the program.
+3.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively?
+1, 4, 4, 2
+4.  What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? Leading bytes used to identify
+file formats (with high probability) are generally called "magic numbers."
+"BM"
+5.  What’s the difference between bfSize and biSize?
+bfSize is the size of the whole bmp file, which includes the headerfiles, while biSize is the size of the BITMAPINFOHEADER
+header file.
+6.  What does it mean if biHeight is negative?
+If biHeight is negative, indicating a top-down DIB, biCompression must be either BI_RGB or BI_BITFIELDS. Top-down DIBs
+cannot be compressed.
+7.  What field in BITMAPINFOHEADER specifies the BMP’s color depth (i.e., bits per pixel)?
+biBitCount
+8.  Why might fopen return NULL in lines 24 and 32 of copy.c?
+If the user does not give a valid file name
+9.  Why is the third argument to fread always 1 in our code?
+Because there is just one element
+10. What value does line 65 of copy.c assign to padding if bi.biWidth is 3?
+3
+11. What does fseek do?
+sets the file position of the stream to the given offset.
+12. What is SEEK_CUR?
+Current position of the file pointer
+

@@ -1,0 +1,37 @@
+What is pneumonoultramicroscopicsilicovolcanoconiosis?
+
+According to Merriam-Webster's Medical Dictionary,
+pneumonoultramicroscopicsilicovolcanoconiosis is a
+pneumoconiosis caused by inhalation of very fine
+silicate or quartz dust.
+
+According to its man page, what does getrusage do?
+
+getrusage() returns resource usage measures for who, which can be one of the following:
+
+RUSAGE_SELF, RUSAGE_CHILDREN, RUSAGE_THREAD
+
+Per that same man page, how many members are in a variable of type struct rusage?
+
+16
+
+Why do you think we pass before and after by reference (instead of by value) to calculate, even though we’re not changing their contents?
+
+Because we dont need the copies changed we need the original values changed. This is like the issue seen in lecture #4.
+
+Explain as precisely as possible, in a paragraph or more, how main goes about reading words from a file. In other words, convince us that you indeed understand how that function’s for loop works.
+
+1) Main first checks that the user has given valid arguments and sets up the dictionary based on inputs or lack of inputs
+2) The load function is called to put the dictionary in memory and this is timed
+3) Files are opened (or error occurs if there is a problem). A char c is read, and the for loop continues to do this as long as c is not EOF
+4) If the char is a letter or comma then it is added to the word array, and the length of the word is checked to be less than max
+5) Once a word is found it is ran through the check function
+
+Why do you think we used fgetc to read each word’s characters one at a time rather than use fscanf with a format string like "%s" to read whole words at a time? Put another way, what problems might arise by relying on fscanf alone?
+
+So we can test one char at a time for better efficiency
+
+Why do you think we declared the parameters for check and load as const (which means "constant")?
+
+So that they are secure and cannot be changed
+
