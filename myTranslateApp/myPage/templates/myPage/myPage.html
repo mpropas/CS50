@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyPage</title>
+    <meta charset="UTF-8">
+    <link rel=icon href=/favicon.png>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% load static %}
+    <script src="{% static 'js/myPage.js' %}"></script>
+    <script src="{% static 'js/myLangs.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <div class="page-header">
+            <h1>Translate! <small>Select a phrase and a language</small></h1>
+        </div>
+
+        <div class="input-group input-group-lg">
+
+            <input id="textField" aria-describedby="sizing-addon3" type="text" class="form-control" aria-label="...">
+
+            <div class="input-group-btn" id="sizing-addon3">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select a Language<span class="caret"></span></button>
+                <ul id="myDropDown" class="dropdown-menu">
+                    <!--
+                    <li><a href="#">Hello There</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    -->
+                </ul>
+            </div>
+
+        </div>
+
+        <h1 id="results"></h1>
+
+        <!-- can i put audio in here? -->
+        <audio id="myAudio" >
+            {% load static %}
+            <source id="myAudioSrc" src="{% static 'mp3s/Bonjour.mp3' %}" type="audio/mp3"> Your browser does not support the audio element.
+        </audio>
+
+    </div>
+</body>
+
+</html>

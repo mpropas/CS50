@@ -1,0 +1,8 @@
+.open > .dropdown-menu {
+    height: 300px;
+    overflow: scroll;
+}
+
+.container-fluid {
+    padding-right: 50px;
+}
