@@ -3,6 +3,8 @@
 This repo contains all the work I did for Stanford / Yale / Edx Course that I completed in February of 2017. A summary of this work is
 listed below:
 
+Final Project, myTranslateApp, has been added.
+
 Week 0:
   A simple asteroids game built on MITs scratch platform.
   
