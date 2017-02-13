@@ -1,5 +1,7 @@
 Welcome to my CS50 Final Project
 
+//An overview video of this project can be seen at https://www.youtube.com/watch?v=WC5lKTknl0Y&feature=youtu.be
+
 This is a small full stack application that brings together many of the languages and concepts from the course. It features:
 
 1) The html page uses bootstrap with a few lines of custom css to make things work better
