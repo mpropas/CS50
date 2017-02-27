@@ -49,7 +49,7 @@ Week 9:
   This week introduces databased, particularly relational databases in SQL. The lecture covered why databases are so useful and how
   they can be vulnerable to malicious injections if not designed properly. For homework we used Pythons Flask framework and SQLite to
   build a stock trading website where users can register, login, logout, see their portfolio, buy stocks, and sell stocks.
-  This involved a log of form validation, SQL table setup, and some basic HTML page writing.
+  This involved a lot of form validation, SQL table setup, and some basic HTML page writing.
   
 Week 10:
   The final language introduced for CS50X was javascript. This lecture showed JQuery, javascript events, and AJAX. The problem set
